@@ -129,7 +129,7 @@
         tools:ignore="HardcodedText"
         android:layout_marginTop="26dp"
         android:layout_below="@+id/phoneInput"
-        android:layout_alignEnd="@+id/addressInput" />
+        android:layout_centerHorizontal="true" />
 
     <info.hoang8f.widget.FButton
         android:text="Cancel"
@@ -145,10 +145,9 @@
         fbutton:cornerRadius="10dp"
         android:background="@drawable/button_shape"
         tools:ignore="HardcodedText"
-        android:layout_alignBaseline="@+id/save"
-        android:layout_alignBottom="@+id/save"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="12dp" />
+        android:layout_marginEnd="12dp"
+        android:layout_alignBottom="@+id/save" />
 
 
 

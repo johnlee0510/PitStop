@@ -32,6 +32,10 @@ public class WeeklyTab extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     protected TextView date;
+    protected TextView datem;
+    protected TextView datet;
+    protected TextView datew;
+    protected TextView dateth;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -73,13 +77,29 @@ public class WeeklyTab extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Date date1 = (new GregorianCalendar(2011 , Calendar.AUGUST, 28)).getTime();
-        Format formatter = new SimpleDateFormat("EEEE");
-        String s = formatter.format(date1);
+        Date date1 = (new GregorianCalendar(2017 , Calendar.OCTOBER, 30)).getTime();
+        Date date2 = (new GregorianCalendar(2017 , Calendar.OCTOBER, 31)).getTime();
+        Date date3 = (new GregorianCalendar(2017 , Calendar.NOVEMBER, 1)).getTime();
+        Date date4 = (new GregorianCalendar(2017 , Calendar.NOVEMBER, 2)).getTime();
+        Date date5 = (new GregorianCalendar(2017 , Calendar.NOVEMBER, 3)).getTime();
+        Format formatter = new SimpleDateFormat("EE, MMM, d");
+        String mon = formatter.format(date1);
+        String tue = formatter.format(date2);
+        String wed = formatter.format(date3);
+        String thu = formatter.format(date4);
+        String fri = formatter.format(date5);
         LayoutInflater layoutInflate = getActivity().getLayoutInflater();
         View view = layoutInflate.inflate(R.layout.fragment_weekly_tab,container,false);
-        date = (TextView) view.findViewById(R.id.cal);
-        date.setText(s);
+        date = (TextView) view.findViewById(R.id.textView2);
+        datem = (TextView) view.findViewById(R.id.textView3);
+        datet = (TextView) view.findViewById(R.id.textView4);
+        datew = (TextView) view.findViewById(R.id.textView5);
+        dateth = (TextView) view.findViewById(R.id.textView6);
+        date.setText(mon);
+        datem.setText(tue);
+        datet.setText(wed);
+        datew.setText(thu);
+        dateth.setText(fri);
         // Inflate the layout for this fragment
         return view;
     }
