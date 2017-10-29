@@ -1,53 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    tools:context="PitStop.Controller.OrderActivity">
+    tools:context="PitStop.Controller.OrderActivity"
+    android:weightSum="1">
 
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/orderTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:text="Order"
         android:textSize="36sp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="23dp"
+        android:layout_below="@+id/toolbar2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="fill_parent"
-        android:layout_height="441dp"
+        android:layout_height="374dp"
         android:paddingLeft="16dp"
+        android:layout_weight="0.60"
+        android:layout_below="@+id/orderTextView"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/orderTextView" />
+        android:layout_marginTop="20dp" />
 
     <info.hoang8f.widget.FButton
         android:id="@+id/cancelButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/listView"
-        android:layout_marginStart="29dp"
         android:background="@drawable/button_shape"
         android:elevation="0dp"
         android:fontFamily="sans-serif-light"
         android:text="Cancel"
         android:textColor="#FFF"
-        fbutton:buttonColor="#039BE5"
+        fbutton:buttonColor="#42d284"
         fbutton:cornerRadius="10dp"
-        fbutton:shadowColor="#0277bd"
+        fbutton:shadowColor="#2cb46a"
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_marginEnd="27dp"
+        android:layout_below="@+id/listView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
 
 
-</LinearLayout>
+</RelativeLayout>
