@@ -2,16 +2,10 @@ package PitStop.Controller;
 /**
  * Created by John on 10/28/2017.
  */
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-import PitStop.Model.RequestHandler;
-import PitStop.Model.SharedPrefManager;
-import PitStop.Model.URLs;
-import PitStop.Model.User;
-import PitStop.R;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -23,6 +17,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+
+import PitStop.Model.RequestHandler;
+import PitStop.Model.SharedPrefManager;
+import PitStop.Model.URLs;
+import PitStop.Model.User;
+import PitStop.R;
 
 public class LoginActivity extends AppCompatActivity {
 
