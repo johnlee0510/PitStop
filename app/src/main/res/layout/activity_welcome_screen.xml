@@ -14,7 +14,8 @@
         android:layout_height="271dp"
         android:background="@drawable/truck"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
 
     <info.hoang8f.widget.FButton
         android:text="Login"
@@ -59,7 +60,7 @@
         android:textColor="#FFF"
         tools:ignore="HardcodedText"
         android:id="@+id/textView"
-        android:layout_alignBottom="@+id/gifImageView"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

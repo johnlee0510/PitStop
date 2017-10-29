@@ -5,11 +5,13 @@
     <item
         android:id="@+id/action_profile"
         android:title="@string/action_profile"
+        android:icon = "@drawable/user"
         app:showAsAction="ifRoom"/>
 
     <!-- Trucks, should always be in the overflow -->
     <item android:id="@+id/action_truck"
         android:title="@string/action_truck"
+        android:icon = "@drawable/truck_icon"
         app:showAsAction="ifRoom"/>
 
     <!-- Trucks, should always be in the overflow -->

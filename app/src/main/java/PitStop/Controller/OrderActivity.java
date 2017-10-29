@@ -18,6 +18,7 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar2);
+        myToolbar.setTitleTextColor(android.graphics.Color.WHITE);
         setSupportActionBar(myToolbar);
 
         // Cancel Button

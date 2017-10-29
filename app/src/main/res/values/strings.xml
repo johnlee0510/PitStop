@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" color="fbutton_color_clouds">PitStop</string>
+    <string name="app_name" color="#ecf0f1">PitStop</string>
     <string name="title_activity_main_food_truck_user">MainFoodTruckUserActivity</string>
     <string name="action_settings">Settings</string>
     <string name="action_profile">Profile</string>

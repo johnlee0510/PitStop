@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="PitStop.Controller.RegistrationActivity">
+    tools:context="PitStop.Controller.RegistrationActivity"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/food">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -67,7 +69,13 @@
 
     </RadioGroup>
 
-    <Button
+    <info.hoang8f.widget.FButton
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFF"
+        fbutton:buttonColor="#42d284"
+        fbutton:cornerRadius="10dp"
+        fbutton:shadowColor="#2cb46a"
+        fbutton:shadowEnabled="true"
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

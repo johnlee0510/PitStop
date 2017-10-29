@@ -22,6 +22,7 @@ public class MainUserActivity extends AppCompatActivity implements CurrentTab.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_user);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.usermenu);
+        myToolbar.setTitleTextColor(android.graphics.Color.WHITE);
         setSupportActionBar(myToolbar);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);

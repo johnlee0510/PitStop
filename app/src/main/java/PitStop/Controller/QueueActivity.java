@@ -18,6 +18,7 @@ public class QueueActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_queue);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.usermenu);
+        myToolbar.setTitleTextColor(android.graphics.Color.WHITE);
         setSupportActionBar(myToolbar);
 
 
