@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import PitStop.R;
 
@@ -60,17 +61,22 @@ public class QueueActivity extends AppCompatActivity {
                 this.startActivity(new Intent(QueueActivity.this, ProfileActivity.class));
                 return true;
 
-            case R.id.action_order:
+            case R.id.action_truck:
                 // User chose the "Favorite" action, mark the current item
                 // as a favorite...
-                this.startActivity(new Intent(QueueActivity.this, OrderActivity.class));
+                item.setVisible(false);
                 return true;
 
-            case R.id.action_logout:
+            case R.id.action_queue:
                 // User chose the "Logout" action, mark the current item
+                this.startActivity(new Intent(QueueActivity.this, QueueActivity.class));
+                return true;
+
+            case R.id.action_logout_truck:
+                // User chose the "Logout" action, mark the current item
+                Toast.makeText(getApplicationContext(), "Sign off, good bye", Toast.LENGTH_SHORT).show();
                 this.startActivity(new Intent(QueueActivity.this, WelcomeScreen.class));
                 return true;
-
             default:
                 // If we got here, the user's action was not recognized.
                 // Invoke the superclass to handle it.

@@ -29,7 +29,7 @@ public class OrderActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Perform action on click
 
-                Intent intent = new Intent(OrderActivity.this, LoginActivity.class);
+                Intent intent = new Intent(OrderActivity.this, MainUserActivity.class);
                 startActivity(intent);
                 finish();
                 //setContentView(R.layout.activity_login);

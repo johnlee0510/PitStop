@@ -9,7 +9,7 @@
     android:weightSum="1">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar3"
+        android:id="@+id/queuetoolbar3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -19,27 +19,27 @@
         android:theme="?attr/actionBarTheme" />
 
     <TextView
-        android:id="@+id/orderTextView"
+        android:id="@+id/queueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Queue"
         android:textSize="36sp"
         tools:ignore="HardcodedText"
-        android:layout_below="@+id/toolbar3"
+        android:layout_below="@+id/queuetoolbar3"
         android:layout_alignParentStart="true"
         android:layout_marginStart="21dp"
         android:layout_marginTop="16dp" />
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/queuelistView"
         android:layout_width="wrap_content"
         android:layout_height="374dp"
         android:layout_marginTop="13dp"
-        android:layout_below="@+id/orderTextView"
+        android:layout_below="@+id/queueTextView"
         android:layout_alignParentStart="true" />
 
     <info.hoang8f.widget.FButton
-        android:id="@+id/cancelButton"
+        android:id="@+id/queuecancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape"
@@ -53,7 +53,7 @@
         fbutton:shadowEnabled="true"
         fbutton:shadowHeight="5dp"
         tools:ignore="HardcodedText"
-        android:layout_below="@+id/listView"
+        android:layout_below="@+id/queuelistView"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="17dp"
         android:layout_marginTop="12dp" />
