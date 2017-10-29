@@ -35,6 +35,20 @@ public class OrderActivity extends AppCompatActivity {
                 //setContentView(R.layout.activity_login);
             }
         });
+
+        // OrderMore Button
+        Button morderButton = (Button) findViewById(R.id.orderMoreButton);
+        morderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform action on click
+
+                Intent intent = new Intent(OrderActivity.this, BuyActivity.class);
+                startActivity(intent);
+                finish();
+                //setContentView(R.layout.activity_login);
+            }
+        });
     }
 
     @Override

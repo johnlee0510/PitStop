@@ -44,6 +44,26 @@
         android:layout_marginTop="20dp" />
 
     <info.hoang8f.widget.FButton
+        android:id="@+id/orderMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Order More"
+        android:textColor="#FFF"
+        fbutton:buttonColor="#42d284"
+        fbutton:cornerRadius="10dp"
+        fbutton:shadowColor="#2cb46a"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        tools:ignore="HardcodedText"
+        android:layout_marginEnd="27dp"
+        android:layout_below="@+id/listView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <info.hoang8f.widget.FButton
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
