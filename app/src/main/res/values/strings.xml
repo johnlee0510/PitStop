@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PitStop</string>
+    <string name="title_activity_main_food_truck_user">MainFoodTruckUserActivity</string>
 </resources>

@@ -10,10 +10,6 @@ import android.content.SharedPreferences;
 
 import PitStop.Controller.LoginActivity;
 
-/**
- * Created by Belal on 9/5/2017.
- */
-
 //here for this class we are using a singleton pattern
 
 public class SharedPrefManager {
