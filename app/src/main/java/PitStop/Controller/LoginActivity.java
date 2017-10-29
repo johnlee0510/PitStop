@@ -36,7 +36,6 @@ public class LoginActivity extends AppCompatActivity {
         editTextUsername = (EditText) findViewById(R.id.editTextUsername);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
 
-
         //if user presses on login
         //calling the method login
         findViewById(R.id.buttonLogin).setOnClickListener(new View.OnClickListener() {
@@ -92,9 +91,6 @@ public class LoginActivity extends AppCompatActivity {
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 progressBar.setVisibility(View.GONE);
-                Log.d("ajdkljfkld","hmmmm");
-                Log.d("Notworking...",s);
-
                 try {
                     //converting response to json object
                     JSONObject obj = new JSONObject(s);
@@ -104,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
                         //getting the user from the response
                         JSONObject userJson = obj.getJSONObject("user");
-
+                        Log.d("user...",s);
                         //creating a new user object
                         User user = new User(
                                 userJson.getInt("id"),
@@ -116,10 +112,10 @@ public class LoginActivity extends AppCompatActivity {
 
                         //storing the user in shared preferences
                         SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
-                        if (user.getId() == 1) {
+                        if (user.getUserType().equals("Customer")) {
                             finish();
                             startActivity(new Intent(getApplicationContext(), MainUserActivity.class));
-                        } else if (user.getId() == 2) {
+                        } else if (user.getUserType().equals("Food Truck Owner")) {
                             finish();
                             startActivity(new Intent(getApplicationContext(), MainFoodTruckUserActivity.class));
                         }
