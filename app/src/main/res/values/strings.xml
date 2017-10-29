@@ -6,4 +6,5 @@
     <string name="action_truck">Trucks</string>
     <string name="action_order">Order</string>
     <string name="action_logout">Logout</string>
+    <string name="action_queue">Queue</string>
 </resources>

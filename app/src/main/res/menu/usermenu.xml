@@ -5,22 +5,22 @@
     <item
         android:id="@+id/action_profile"
         android:title="@string/action_profile"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
 
     <!-- Trucks, should always be in the overflow -->
     <item android:id="@+id/action_truck"
         android:title="@string/action_truck"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
 
     <!-- Trucks, should always be in the overflow -->
     <item android:id="@+id/action_order"
         android:title="@string/action_order"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
 
     <!-- Trucks, should always be in the overflow -->
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
 
     <!-- Settings, should always be in the overflow -->
     <item android:id="@+id/action_logout"

@@ -6,3 +6,12 @@ build/android-profile/profile-2017-10-28-22-06-55-502.rawproto
 build/android-profile/profile-2017-10-28-22-06-59-915.rawproto
 .gradle/3.3
 .idea/workspace.xml
+build/android-profile
+build/android-profile/profile-2017-10-28-22-52-28-432.rawproto
+build/android-profile/profile-2017-10-28-22-53-19-668.rawproto
+build/android-profile/profile-2017-10-28-22-53-57-072.rawproto
+build/android-profile/profile-2017-10-29-00-02-21-508.rawproto
+build/android-profile/profile-2017-10-29-00-02-36-024.rawproto
+build/generated/
+app/app.iml
+local.properties
