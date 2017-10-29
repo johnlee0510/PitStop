@@ -17,6 +17,7 @@
     <!-- Trucks, should always be in the overflow -->
     <item android:id="@+id/action_order"
         android:title="@string/action_order"
+        android:icon = "@drawable/order"
         app:showAsAction="ifRoom"/>
 
     <!-- Trucks, should always be in the overflow -->

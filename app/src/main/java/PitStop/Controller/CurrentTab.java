@@ -77,8 +77,8 @@ public class CurrentTab extends Fragment {
         LayoutInflater layoutInflate = getActivity().getLayoutInflater();
         View view = layoutInflate.inflate(R.layout.fragment_current_tab,container,false);
         date = (TextView) view.findViewById(R.id.date);
-        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-        date.setText(currentDateTimeString);
+        String currentDateString = DateFormat.getDateInstance().format(new Date());
+        date.setText(currentDateString);
 // textView is the TextView view that should display it
 
 
