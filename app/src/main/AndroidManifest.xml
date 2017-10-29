@@ -21,7 +21,8 @@
         <activity
             android:name=".Controller.MainFoodTruckUserActivity"
             android:label="@string/title_activity_main_food_truck_user"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Controller.WelcomeScreen"></activity>
     </application>
 
 </manifest>
