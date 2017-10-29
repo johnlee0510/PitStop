@@ -16,6 +16,7 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.HashMap;
 
 import PitStop.Model.RequestHandler;
@@ -25,9 +26,8 @@ import PitStop.Model.User;
 import PitStop.R;
 
 public class LoginActivity extends AppCompatActivity {
-
+    public static User user;
     EditText editTextUsername, editTextPassword;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,7 +102,7 @@ public class LoginActivity extends AppCompatActivity {
                         JSONObject userJson = obj.getJSONObject("user");
                         Log.d("user...",s);
                         //creating a new user object
-                        User user = new User(
+                        user = new User(
                                 userJson.getInt("id"),
                                 userJson.getString("username"),
                                 userJson.getString("password"),
@@ -114,7 +114,9 @@ public class LoginActivity extends AppCompatActivity {
                         SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
                         if (user.getUserType().equals("Customer")) {
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MainUserActivity.class));
+                           Intent intent =  new Intent(getApplicationContext(), MainUserActivity.class);
+                            intent.putExtra("user", (Serializable) user);
+                            startActivity(intent);
                         } else if (user.getUserType().equals("Food Truck Owner")) {
                             finish();
                             startActivity(new Intent(getApplicationContext(), MainFoodTruckUserActivity.class));

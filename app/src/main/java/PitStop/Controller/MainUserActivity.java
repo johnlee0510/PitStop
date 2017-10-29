@@ -10,15 +10,19 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import java.io.Serializable;
+
+import PitStop.Model.User;
 import PitStop.R;
 
 public class MainUserActivity extends AppCompatActivity implements CurrentTab.OnFragmentInteractionListener ,WeeklyTab.OnFragmentInteractionListener {
-
+    User user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +35,15 @@ public class MainUserActivity extends AppCompatActivity implements CurrentTab.On
         tabLayout.addTab(tabLayout.newTab().setText("Current"));
         tabLayout.addTab(tabLayout.newTab().setText("Weekly"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        try {
+            Bundle extras = getIntent().getExtras();
+            if (extras != null) {
+                user = (User) getIntent().getSerializableExtra("user"); //Obtaining data
+            }
+        } catch (Exception e) {
+            Log.d("debug", "something went wrong");
+        }
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final PagerAdapter adapter = new PagerAdapter
@@ -71,7 +84,9 @@ public class MainUserActivity extends AppCompatActivity implements CurrentTab.On
         switch (item.getItemId()) {
             case R.id.action_profile:
                 // User chose the "Settings" item, show the app settings UI...
-                this.startActivity(new Intent(MainUserActivity.this, ProfileActivity.class));
+                Intent intent =  new Intent(getApplicationContext(), ProfileActivity.class);
+                intent.putExtra("user", (Serializable) user);
+                startActivity(intent);
                 return true;
 
             case R.id.action_truck:

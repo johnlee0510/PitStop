@@ -4,14 +4,19 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
 
+import PitStop.Model.User;
 import PitStop.R;
 
 public class ProfileActivity extends AppCompatActivity {
-
+    private User user;
+    TextView username, name, email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +24,18 @@ public class ProfileActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar4);
         myToolbar.setTitleTextColor(android.graphics.Color.WHITE);
         setSupportActionBar(myToolbar);
+        try {
+            Bundle extras = getIntent().getExtras();
+            if (extras != null) {
+                user = (User) getIntent().getSerializableExtra("user"); //Obtaining data
+            }
+        } catch (Exception e) {
+            Log.d("debug", "something went wrong");
+            username = (TextView) findViewById(R.id.usernameProftext);
+            email = (TextView) findViewById(R.id.emailInput);
+        }
+        username.setText(user.getUsername());
+        email.setText(user.getEmail());
     }
 
     @Override
