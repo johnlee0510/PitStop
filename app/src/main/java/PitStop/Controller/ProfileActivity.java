@@ -13,8 +13,10 @@ import android.widget.TextView;
 
 import PitStop.R;
 
-public class ProfileActivity extends AppCompatActivity {
+import static PitStop.Controller.LoginActivity.user;
 
+public class ProfileActivity extends AppCompatActivity {
+    TextView username, email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,35 +24,40 @@ public class ProfileActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar4);
         myToolbar.setTitleTextColor(android.graphics.Color.WHITE);
         setSupportActionBar(myToolbar);
+        username = (TextView) findViewById(R.id.nameInput);
+        email = (TextView) findViewById(R.id.emailInput);
 
-        // Configure Login Button
-        Button saveButton = (Button) findViewById(R.id.save);
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-                saveClicked();
-            }
-        });
-
-        // Configure Registration Button
-        Button cancelButton = (Button) findViewById(R.id.cancelProfile);
-        cancelButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-                cancelClicked();
-            }
-        });
+        username.setText(user.getUsername());
+        email.setText(user.getEmail());
     }
-
-    private void saveClicked() {
-        Intent intent = new Intent(ProfileActivity.this, MainUserActivity.class);
-        startActivity(intent);
-    }
-
-    private void cancelClicked() {
-        Intent intent2 = new Intent(ProfileActivity.this, MainUserActivity.class);
-        startActivity(intent2);
-    }
+//        // Configure Login Button
+//        Button saveButton = (Button) findViewById(R.id.save);
+//        saveButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                // Perform action on click
+//                saveClicked();
+//            }
+//        });
+//
+//        // Configure Registration Button
+//        Button cancelButton = (Button) findViewById(R.id.cancelProfile);
+//        cancelButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                // Perform action on click
+//                cancelClicked();
+//            }
+//        });
+//    }
+//
+//    private void saveClicked() {
+//        Intent intent = new Intent(ProfileActivity.this, MainUserActivity.class);
+//        startActivity(intent);
+//    }
+//
+//    private void cancelClicked() {
+//        Intent intent2 = new Intent(ProfileActivity.this, MainUserActivity.class);
+//        startActivity(intent2);
+//    }
 
 
     @Override

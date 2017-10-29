@@ -79,6 +79,7 @@ public class CurrentTab extends Fragment {
         date = (TextView) view.findViewById(R.id.date);
         String currentDateString = DateFormat.getDateInstance().format(new Date());
         date.setText(currentDateString);
+
 // textView is the TextView view that should display it
 
 

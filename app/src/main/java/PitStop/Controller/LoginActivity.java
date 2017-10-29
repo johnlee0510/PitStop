@@ -16,7 +16,6 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.Serializable;
 import java.util.HashMap;
 
 import PitStop.Model.RequestHandler;
@@ -115,7 +114,6 @@ public class LoginActivity extends AppCompatActivity {
                         if (user.getUserType().equals("Customer")) {
                             finish();
                            Intent intent =  new Intent(getApplicationContext(), MainUserActivity.class);
-                            intent.putExtra("user", (Serializable) user);
                             startActivity(intent);
                         } else if (user.getUserType().equals("Food Truck Owner")) {
                             finish();
