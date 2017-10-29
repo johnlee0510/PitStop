@@ -2,6 +2,7 @@ package PitStop.Controller;
 /**
  * Created by John on 10/28/2017.
  */
+import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -69,13 +70,24 @@ public class MainUserActivity extends AppCompatActivity implements CurrentTab.On
         switch (item.getItemId()) {
             case R.id.action_profile:
                 // User chose the "Settings" item, show the app settings UI...
+                this.startActivity(new Intent(MainUserActivity.this, ProfileActivity.class));
                 return true;
 
             case R.id.action_truck:
                 // User chose the "Favorite" action, mark the current item
                 // as a favorite...
+                item.setVisible(false);
                 return true;
 
+            case R.id.action_order:
+                // User chose the "Logout" action, mark the current item
+                this.startActivity(new Intent(MainUserActivity.this, OrderActivity.class));
+                return true;
+
+            case R.id.action_logout:
+                // User chose the "Logout" action, mark the current item
+                this.startActivity(new Intent(MainUserActivity.this, WelcomeScreen.class));
+                return true;
             default:
                 // If we got here, the user's action was not recognized.
                 // Invoke the superclass to handle it.
