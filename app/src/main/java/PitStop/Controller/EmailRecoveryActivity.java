@@ -3,7 +3,7 @@ package PitStop.Controller;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.john.pitstop.R;
+import PitStop.R;
 
 public class EmailRecoveryActivity extends AppCompatActivity {
 
