@@ -112,10 +112,10 @@ public class LoginActivity extends AppCompatActivity {
 
                         //storing the user in shared preferences
                         SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
-                        if (user.getUserType().equals("1")) {
+                        if (user.getUserType().equals("Customer")) {
                             finish();
                             startActivity(new Intent(getApplicationContext(), MainUserActivity.class));
-                        } else if (user.getUserType().equals("2")) {
+                        } else if (user.getUserType().equals("Food Truck Owner")) {
                             finish();
                             startActivity(new Intent(getApplicationContext(), MainFoodTruckUserActivity.class));
                         }
