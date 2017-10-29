@@ -1,12 +1,18 @@
 package PitStop.Controller;
 
 import android.content.Context;
+import android.icu.text.DateFormat;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+import java.util.Date;
 
 import PitStop.R;
 
@@ -23,6 +29,7 @@ public class CurrentTab extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    protected TextView date;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -59,14 +66,24 @@ public class CurrentTab extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        LayoutInflater layoutInflate = getActivity().getLayoutInflater();
+        View view = layoutInflate.inflate(R.layout.fragment_current_tab,container,false);
+        date = (TextView) view.findViewById(R.id.date);
+        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+        date.setText(currentDateTimeString);
+// textView is the TextView view that should display it
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_current_tab, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -77,8 +94,16 @@ public class CurrentTab extends Fragment {
     }
 
     @Override
+    public void onStart(){
+        super.onStart();
+        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+        date.setText(currentDateTimeString);
+    }
+
+    @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
