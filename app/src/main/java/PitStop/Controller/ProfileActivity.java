@@ -7,6 +7,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import PitStop.R;
 
@@ -19,7 +22,36 @@ public class ProfileActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar4);
         myToolbar.setTitleTextColor(android.graphics.Color.WHITE);
         setSupportActionBar(myToolbar);
+
+        // Configure Login Button
+        Button saveButton = (Button) findViewById(R.id.save);
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+                saveClicked();
+            }
+        });
+
+        // Configure Registration Button
+        Button cancelButton = (Button) findViewById(R.id.cancelProfile);
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+                cancelClicked();
+            }
+        });
     }
+
+    private void saveClicked() {
+        Intent intent = new Intent(ProfileActivity.this, MainUserActivity.class);
+        startActivity(intent);
+    }
+
+    private void cancelClicked() {
+        Intent intent2 = new Intent(ProfileActivity.this, MainUserActivity.class);
+        startActivity(intent2);
+    }
+
 
     @Override
 
