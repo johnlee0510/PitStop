@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import PitStop.R;
 
@@ -80,6 +81,7 @@ public class MainUserActivity extends AppCompatActivity implements CurrentTab.On
 
             case R.id.action_logout:
                 // User chose the "Logout" action, mark the current item
+                Toast.makeText(getApplicationContext(), "Sign off, good bye", Toast.LENGTH_SHORT).show();
                 this.startActivity(new Intent(MainUserActivity.this, WelcomeScreen.class));
                 return true;
             default:
