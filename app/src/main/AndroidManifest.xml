@@ -33,6 +33,7 @@
         <activity android:name=".Controller.OrderActivity" />
         <activity android:name=".Controller.QueueActivity" />
         <activity android:name=".Controller.EmailRecoveryActivity" />
+        <activity android:name=".Controller.ConfirmActivity"></activity>
         <activity android:name=".Controller.BuyActivity"></activity>
     </application>
 

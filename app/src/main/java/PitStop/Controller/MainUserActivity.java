@@ -89,12 +89,6 @@ public class MainUserActivity extends AppCompatActivity implements CurrentTab.On
                 startActivity(intent);
                 return true;
 
-            case R.id.action_truck:
-                // User chose the "Favorite" action, mark the current item
-                // as a favorite...
-                item.setVisible(false);
-                return true;
-
             case R.id.action_order:
                 // User chose the "Logout" action, mark the current item
                 this.startActivity(new Intent(MainUserActivity.this, OrderActivity.class));

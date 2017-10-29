@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="PitStop.Controller.BuyActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/linearLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/orderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar3"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+            android:text="Buy"
+            android:textSize="36sp"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/aviTruckList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderTextView"
+            android:layout_margin="20dp"/>
+
+        <Spinner
+            android:id="@+id/FoodList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FoodList"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/orderButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Confirm"
+        android:textColor="#FFF"
+        fbutton:buttonColor="#42d284"
+        fbutton:cornerRadius="10dp"
+        fbutton:shadowColor="#2cb46a"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Cancel"
+        android:textColor="#FFF"
+        fbutton:buttonColor="#42d284"
+        fbutton:cornerRadius="10dp"
+        fbutton:shadowColor="#2cb46a"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        tools:ignore="HardcodedText"
+        android:layout_alignBaseline="@+id/orderButton"
+        android:layout_alignBottom="@+id/orderButton"
+        android:layout_toEndOf="@+id/orderButton"
+        android:layout_marginStart="70dp" />
+
+</RelativeLayout>
