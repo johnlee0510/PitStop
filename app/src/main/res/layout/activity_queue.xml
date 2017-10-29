@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="PitStop.Controller.QueueActivity">
+
+    <TextView
+        android:id="@+id/orderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Queue"
+        android:textSize="36sp"
+        tools:ignore="HardcodedText" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="441dp"
+        android:paddingLeft="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/orderTextView" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView"
+        android:layout_marginStart="29dp"
+        android:background="@drawable/button_shape"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Cancel"
+        android:textColor="#FFF"
+        fbutton:buttonColor="#039BE5"
+        fbutton:cornerRadius="10dp"
+        fbutton:shadowColor="#0277bd"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
