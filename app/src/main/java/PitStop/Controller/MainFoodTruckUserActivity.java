@@ -19,8 +19,7 @@ public class MainFoodTruckUserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_food_truck_user);
-        setContentView(R.layout.content_main_food_truck_user);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar4);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.truckmenu);
         myToolbar.setTitleTextColor(android.graphics.Color.WHITE);
         setSupportActionBar(myToolbar);
     }
