@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="PitStop.Controller.LoginActivity"
@@ -35,7 +36,13 @@
             android:hint="Password"
             android:inputType="textPassword" />
 
-        <Button
+        <info.hoang8f.widget.FButton
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFF"
+            fbutton:buttonColor="#42d284"
+            fbutton:cornerRadius="10dp"
+            fbutton:shadowColor="#2cb46a"
+            fbutton:shadowEnabled="true"
             android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
