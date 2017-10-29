@@ -172,7 +172,7 @@ public class RegistrationActivity extends AppCompatActivity {
                             finish();
                             startActivity(new Intent(getApplicationContext(), WelcomeScreen.class));
                         } else {
-                            Toast.makeText(getApplicationContext(), "Some error occurred", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
                         }
                     } catch (JSONException e) {
                         Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
