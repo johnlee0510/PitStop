@@ -2,10 +2,11 @@ package PitStop.Controller;
 /**
  * Created by John on 10/28/2017.
  */
+
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -45,6 +47,16 @@ public class RegistrationActivity extends AppCompatActivity {
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         radioGroupUserType = (RadioGroup) findViewById(R.id.radioUserType);
+
+
+        // Configure Forgot Password Button
+        TextView EmailRecoveryButton = (TextView) findViewById(R.id.textViewEmailRecovery);
+        EmailRecoveryButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+                startActivity(new Intent(RegistrationActivity.this, EmailRecoveryActivity.class));
+            }
+        });
 
 
         findViewById(R.id.buttonRegister).setOnClickListener(new View.OnClickListener() {
@@ -158,7 +170,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
                             //starting the profile activity
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MainUserActivity.class));
+                            startActivity(new Intent(getApplicationContext(), WelcomeScreen.class));
                         } else {
                             Toast.makeText(getApplicationContext(), "Some error occurred", Toast.LENGTH_SHORT).show();
                         }
