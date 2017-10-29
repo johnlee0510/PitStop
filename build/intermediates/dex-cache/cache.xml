@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/AustinJ/Documents/Program/hack_2017/Appathon_2017/PitStop/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="20154cfab0d04fc714fc6f71c99b7ef54821c7ca">
+        <dex dex="/Users/AustinJ/Documents/Program/hack_2017/Appathon_2017/PitStop/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7fe543c740b30c7801787c7cf897ead81b01bf55/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/AustinJ/Documents/Program/hack_2017/Appathon_2017/PitStop/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/AustinJ/Documents/Program/hack_2017/Appathon_2017/PitStop/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_759938aea3d968218f08a540d52f1864bf8c68a8/classes.dex" />
+    </item>
+
+</items>
