@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Bree~\.android\build-cache\58bacc2d720f5b12df6e148825599da786a271bc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="541a2ad68dc68aa49795821f8280b7624e6a0c9b">
+        <dex dex="C:\Users\Bree~\Documents\Design Practice\GitHub\PitStop-master\PitStop-master\PitStop\app\build\intermediates\pre-dexed\debug\classes_e254377fbc8c7a2342abc176cfafd2ea5ba7841d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Bree~\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha7\constraint-layout-solver-1.0.0-alpha7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="439eeb5ffd54cbd18db0a6aea471e8356f19fc36">
+        <dex dex="C:\Users\Bree~\Documents\Design Practice\GitHub\PitStop-master\PitStop-master\PitStop\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-alpha7_0fdc7f1192e7540ccfcd687cc81adc6c06103ba8.jar" />
+    </item>
+
+</items>
