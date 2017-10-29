@@ -16,7 +16,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar2);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar4);
         myToolbar.setTitleTextColor(android.graphics.Color.WHITE);
         setSupportActionBar(myToolbar);
     }
