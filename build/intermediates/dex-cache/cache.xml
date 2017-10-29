@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f85414960b0e79b69ff874577529806c1454ce46">
+        <dex dex="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0ceaa87f1cfbba664ccd9b62dbd59f41196f3ac1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8c66664b82a80cc1ca8f09e8db5fa79d02dfdee8\classes.dex" />
+    </item>
+
+</items>
