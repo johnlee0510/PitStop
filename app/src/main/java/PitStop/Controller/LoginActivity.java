@@ -109,8 +109,6 @@ public class LoginActivity extends AppCompatActivity {
                                 userJson.getString("userType")
                         );
 
-                        //storing the user in shared preferences
-                        SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
                         if (user.getUserType().equals("Customer")) {
                             finish();
                            Intent intent =  new Intent(getApplicationContext(), MainUserActivity.class);

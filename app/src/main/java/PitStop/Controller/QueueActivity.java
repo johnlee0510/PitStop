@@ -67,9 +67,9 @@ public class QueueActivity extends AppCompatActivity {
                 item.setVisible(false);
                 return true;
 
-            case R.id.action_queue:
+            case R.id.action_mainPage:
                 // User chose the "Logout" action, mark the current item
-                this.startActivity(new Intent(QueueActivity.this, QueueActivity.class));
+                this.startActivity(new Intent(QueueActivity.this, MainFoodTruckUserActivity.class));
                 return true;
 
             case R.id.action_logout_truck:

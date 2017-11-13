@@ -36,14 +36,14 @@ public class MainUserActivity extends AppCompatActivity implements CurrentTab.On
         tabLayout.addTab(tabLayout.newTab().setText("Weekly"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        try {
-            Bundle extras = getIntent().getExtras();
-            if (extras != null) {
-                user = (User) getIntent().getSerializableExtra("user"); //Obtaining data
-            }
-        } catch (Exception e) {
-            Log.d("debug", "something went wrong");
-        }
+//        try {
+//            Bundle extras = getIntent().getExtras();
+//            if (extras != null) {
+//                user = (User) getIntent().getSerializableExtra("user"); //Obtaining data
+//            }
+//        } catch (Exception e) {
+//            Log.d("debug", "something went wrong");
+//        }
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final PagerAdapter adapter = new PagerAdapter
@@ -69,7 +69,6 @@ public class MainUserActivity extends AppCompatActivity implements CurrentTab.On
     }
 
     @Override
-
     public boolean onCreateOptionsMenu(Menu menu) {
 
         MenuInflater inflater = getMenuInflater();

@@ -1,8 +1,8 @@
 package PitStop.Controller;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -33,7 +33,7 @@ public class BuyActivity extends AppCompatActivity {
             public void onClick (View v){
                 // Perform action on click
 
-                Intent intent = new Intent(BuyActivity.this, LoginActivity.class);
+                Intent intent = new Intent(BuyActivity.this, OrderActivity.class);
                 startActivity(intent);
                 finish();
                 //setContentView(R.layout.activity_login);

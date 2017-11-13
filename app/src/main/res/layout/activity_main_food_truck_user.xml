@@ -27,10 +27,9 @@
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_above="@+id/simpleSwitch"
-        android:layout_toEndOf="@+id/progressBar"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="56dp" />" />
+        android:layout_below="@+id/truckmenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />" />
 
     <info.hoang8f.widget.FButton
         android:id="@+id/FoodTruckConfirm"
@@ -78,7 +77,7 @@
         android:id="@+id/editMaxLimit"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="43dp"
         android:fontFamily="sans-serif"
         android:hint="# of limit"
         android:inputType="text"
@@ -87,8 +86,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_above="@+id/FoodTruckConfirm"
-        android:layout_toEndOf="@+id/truckName"
-        android:layout_marginStart="25dp" />
+        android:layout_toEndOf="@+id/truckName" />
 
     <ProgressBar
         android:visibility="gone"

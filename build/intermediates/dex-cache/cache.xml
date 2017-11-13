@@ -7,8 +7,17 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="194f48cd7eb8b1658fbc56eb2eee2288bfd6d8a2">
+        sha1="2b025f11926bfa1e75892792d59af818827fac80">
         <dex dex="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0ceaa87f1cfbba664ccd9b62dbd59f41196f3ac1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\Desktop\Appathon\PitStop\app\libs\mail.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\transforms\dex\debug\folders\1000\2\mail_4a91998bb74d022be27e67de81d25a1da2c4b22c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +27,24 @@
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8c66664b82a80cc1ca8f09e8db5fa79d02dfdee8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\Desktop\Appathon\PitStop\app\libs\activation.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\transforms\dex\debug\folders\1000\2\activation_673a138be55c1f890f3fad48054afc5face006ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\Desktop\Appathon\PitStop\app\libs\additionnal.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="C:\Users\John\Desktop\Appathon\PitStop\app\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_c9571b2c4d067ab6aecf86e7115c2f49079db6fc\classes.dex" />
     </item>
 
 </items>

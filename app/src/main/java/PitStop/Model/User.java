@@ -31,13 +31,4 @@ public class User {
     public String getUserType() {
         return userType;
     }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public void setUsername(String username) {
-        this.username = username;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
